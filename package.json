@@ -1,0 +1,23 @@
+{
+    "name": "sicknote",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "start:frontend": "npm run dev --workspace frontend",
+        "start:backend": "npm start --workspace backend",
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/maxwellsquared/sicknote.git"
+    },
+    "keywords": [],
+    "devDependencies": {
+        "concurrently": "^6.2.1"
+    }
+}
